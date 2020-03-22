@@ -5,7 +5,8 @@ public class Activity {
 
     String name;
 
-    //additional properties
-    int grantedHapiness;
 
+    public Activity(String name) {
+        this.name = name;
+    }
 }

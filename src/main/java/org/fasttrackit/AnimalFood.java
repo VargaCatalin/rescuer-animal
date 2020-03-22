@@ -8,4 +8,9 @@ public class AnimalFood {
     int stock;
     String flavour;
 
+    public AnimalFood(String name) {
+        this.name = name;
+        this.price = price;
+        this.stock = stock;
+    }
 }

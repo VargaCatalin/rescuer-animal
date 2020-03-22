@@ -1,6 +1,5 @@
 package org.fasttrackit;
 
-import java.nio.charset.MalformedInputException;
 
 /**
  * Hello world!
@@ -8,41 +7,22 @@ import java.nio.charset.MalformedInputException;
  */
 public class App 
 {
-    public static void main( String[] args )
+
+    public static void main(String[] args )
     {
         System.out.println( "Welcome to animal rescuer!" );
 
 
         //Proprietes of Adopter !
-        Adopter adopterProprietes = new Adopter();
-        adopterProprietes.name = "Marcel";
-        adopterProprietes.gender = "Boy";
-        adopterProprietes.age = 10;
-        adopterProprietes.money = 50;
+        Adopter adopterProprietes = new Adopter("Andrei", 50);
 
-        System.out.println("Adopter proprietes are:");
-        System.out.println("Name: " + adopterProprietes.name);
-        System.out.println("Gender: " + adopterProprietes.gender);
-        System.out.println("Age: " + adopterProprietes.age);
-        System.out.println("Money have: " + adopterProprietes.money);
 
         //////////////////////////////////////////////////////////////////////
 
 
-
         //Proprietes of Animal !
-        Animal animalDog = new Animal("Azorel");
+        Animal animalDog = new Animal("Max", 2, 10);
 
-        animalDog.name = "Bruno";
-        animalDog.age = 2;
-        animalDog.weight = 5;
-        animalDog.healthLevel = 98; // 1 - pana la 100 %
-        animalDog.hungerLevel = 10; // 1 -  pana la 10 %
-        animalDog.hapinessLevel = 2; // 1 - pana la 10 %
-        animalDog.medicalTreatment = true;
-        animalDog.favouriteFood = "Bones";
-        animalDog.unfavorableFood = "Pedigree";
-        animalDog.favouriteActivity = "Swimming";
 
         System.out.println("Animal proprietes are:");
         System.out.println("Name: " + animalDog.name);
@@ -62,10 +42,25 @@ public class App
 
 
 
+        // DOG CONSTRUCTOR
+        Dog dog = new Dog("Azor", 10, 10);
+
+
+
+
+
+        // BIRD CONSTRUCTOR
+        Bird bird = new Bird("Pollie", 2 ,10
+        );
+
+
+        BirdFood birdFood = new BirdFood("Blue");
+
+
         //Proprietes of Food
 
-       Food foodProprietes = new Food();
-        foodProprietes.name= "Bones";
+       Food foodProprietes = new Food(5 , "Bones" );
+
         foodProprietes.Weight = 1000;
         foodProprietes.price = 50;
         foodProprietes.stock = 5;
@@ -76,11 +71,11 @@ public class App
         System.out.println("Price food is: " + foodProprietes.price);
 
         ////////////////////////////////////////////////////////////////////
-
+        DogFood dogFood = new DogFood("Bones", 10, 5);
 
         //Proprietes of Vet
 
-        Vet vetProprietes = new Vet();
+        Vet vetProprietes = new Vet("Petre", "Dentist" , "Male",  40 );
         vetProprietes.name = "Dorel";
         vetProprietes.age = 55;
         vetProprietes.gender = "Male";
@@ -95,9 +90,15 @@ public class App
         System.out.println("Price treatment is: " + vetProprietes.priceTreatment);
 
 
-        Activity activityRecreation = new Activity();
+        Activity activityRecreation = new Activity("Running");
 
         activityRecreation.name = "Playing with kids";
+
+
+        Environment environment = new Environment("Sunny", 30);
+
+
+
 
 
 
@@ -108,11 +109,6 @@ public class App
         Game game = new Game();
 
         Adopter adopter = new Adopter();
-
-
-
-        adopter.walking();
-
     }
 
 }

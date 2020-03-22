@@ -2,12 +2,23 @@ package org.fasttrackit;
 
 public class Adopter {
 
-    String name;
-    String gender;
-    int age;
-    int money;
+  private String name;
+  private int money;
 
-    public void walking() {
+
+    public Adopter(String name, int money) {
+
+        this.name = name;
+        this.money = money;
+
+
+    }
+
+    public Adopter() {
 
     }
 }
+
+
+
+

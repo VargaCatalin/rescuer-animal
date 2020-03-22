@@ -8,6 +8,12 @@ public class Food {
           int Weight;
           int stock;
 
+    public Food(int price, String name) {
+        this.price = price;
+        this.name  = name;
+
+    }
+
 
 
 

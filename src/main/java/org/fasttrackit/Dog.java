@@ -1,13 +1,13 @@
 package org.fasttrackit;
 
-public class Dog extends AnimalFood {
 
-    String leash;
+public class Dog extends Animal {
 
-    public  void showHapiness() {
-        System.out.println("Your dog is smiling");
+
+    public Dog(String name, int age, int hapinessLevel) {
+        super(name, age, hapinessLevel);
+
+
 
     }
-
-
 }

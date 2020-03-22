@@ -1,9 +1,12 @@
 package org.fasttrackit;
 
-public class DogFood extends  AnimalFood {
+public class DogFood extends AnimalFood {
 
-    String model;
-
+    public DogFood(String name, int price, int stock) {
+        super(name);
     }
+}
+
+
 
 

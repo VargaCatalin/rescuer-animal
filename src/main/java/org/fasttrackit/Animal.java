@@ -13,8 +13,13 @@ public class Animal {
     String favouriteActivity;
     String unfavorableFood;
 
-    public Animal(String name) {
-        this.name = name;
-    }
+    public Animal(String name, int age, int hapinessLevel) {
 
+        this.name = name;
+        this.age = age;
+        this.hapinessLevel = hapinessLevel;
+
+
+
+    }
 }
