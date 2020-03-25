@@ -1,6 +1,9 @@
 package org.fasttrackit;
 
 
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 /**
  * Hello world!
  *
@@ -10,14 +13,28 @@ public class App
 
     public static void main(String[] args )
     {
+
+        //Introducing of game
         System.out.println( "Welcome to animal rescuer!" );
+        System.out.println("Introduce your animal name!");
+        Scanner scanner = new Scanner(System.in);
+        String dogName = scanner.nextLine();
 
 
         //Proprietes of Adopter !
-        Adopter adopterProprietes = new Adopter("Andrei", 50);
+        Adopter adopter = new Adopter("Andrei", 50);
+        System.out.println("Introduce your adopter name");
+        Scanner scanner1 = new Scanner(System.in);
 
 
-        //////////////////////////////////////////////////////////////////////
+        //Proprietes of Vet
+        Vet vetProprietes = new Vet("Petre", "Dentist" , "Male",  40 );
+        vetProprietes.setName("Andreea");
+        vetProprietes.setAge(35);
+        vetProprietes.setGender("Female");
+
+        System.out.println("Available Vets");
+        System.out.println(vetProprietes.getName() + "," + vetProprietes.getGender() + "," + vetProprietes.getAge());
 
 
         //Proprietes of Animal !
@@ -38,14 +55,8 @@ public class App
         //////////////////////////////////////////////////////////////////////////////
 
 
-
-
-
-
         // DOG CONSTRUCTOR
         Dog dog = new Dog("Azor", 10, 10);
-
-
 
 
 
@@ -54,61 +65,51 @@ public class App
         );
 
 
-        BirdFood birdFood = new BirdFood("Blue");
 
 
         //Proprietes of Food
 
-       Food foodProprietes = new Food(5 , "Bones" );
+       Food food = new Food(5 , "Bones" );
+        food.Weight = 1000;
+        food.price = 50;
+        food.stock = 5;
 
-        foodProprietes.Weight = 1000;
-        foodProprietes.price = 50;
-        foodProprietes.stock = 5;
+
+        System.out.println("Food name are: " + food.name);
+        System.out.println("Food weight is: " + food.Weight);
+        System.out.println("Price food is: " + food.price);
 
 
-        System.out.println("Food name are: " + foodProprietes.name);
-        System.out.println("Food weight is: " + foodProprietes.Weight);
-        System.out.println("Price food is: " + foodProprietes.price);
 
-        ////////////////////////////////////////////////////////////////////
+       //Animal food
         DogFood dogFood = new DogFood("Bones", 10, 5);
-
-        //Proprietes of Vet
-
-        Vet vetProprietes = new Vet("Petre", "Dentist" , "Male",  40 );
-        vetProprietes.name = "Dorel";
-        vetProprietes.age = 55;
-        vetProprietes.gender = "Male";
-        vetProprietes.specialization = "Dentist";
-        vetProprietes.priceTreatment = 100;
+        BirdFood birdFood = new BirdFood("Blue");
 
 
-        System.out.println("Vet name are: " + vetProprietes.name);
-        System.out.println("Vet age is: " + vetProprietes.age);
-        System.out.println("Vet gender are: " + vetProprietes.gender);
-        System.out.println("Vet specialization is: " + vetProprietes.specialization);
-        System.out.println("Price treatment is: " + vetProprietes.priceTreatment);
 
 
-        Activity activityRecreation = new Activity("Running");
-
-        activityRecreation.name = "Playing with kids";
 
 
+        // Activity
+
+        Activity activity1 = new Activity("running");
+        Activity activity2 = new Activity("walking");
+
+        adopter.doActivity(dog, activity1);
+
+
+
+
+
+        // Environment
         Environment environment = new Environment("Sunny", 30);
 
 
-
-
-
-
-      //////////////////////////////////////////////////////////////////////
 
         //Game members
 
         Game game = new Game();
 
-        Adopter adopter = new Adopter();
     }
 
 }
