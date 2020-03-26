@@ -11,7 +11,6 @@ public class Animal {
     boolean medicalTreatment;
     String favouriteFood;
     String favouriteActivity;
-    String unfavorableFood;
 
     public Animal(String name, int age, int hapinessLevel) {
 
