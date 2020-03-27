@@ -4,18 +4,16 @@ public class Bird extends Animal{
 
     private String feathers;
 
-    public void showHapiness() {
-
-        System.out.println("Your bird  sings");
-    }
-
 
     public Bird(String name, int age, int hapinessLevel) {
         super(name, age, hapinessLevel);
 
-
-
     }
+
+    public void showHapiness(){
+        System.out.println("The bird is flying!");
+    }
+
 
 
     public String getFeathers() {

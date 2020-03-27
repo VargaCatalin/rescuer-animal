@@ -18,7 +18,10 @@ public class Animal {
         this.age = age;
         this.hapinessLevel = hapinessLevel;
 
+    }
 
+    public void showHapiness() {
+        System.out.println();
 
     }
 

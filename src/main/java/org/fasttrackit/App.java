@@ -109,6 +109,9 @@ public class App
 
         Game game = new Game();
 
+        dog.showHapiness();
+        bird.showHapiness();
+
     }
 
 }

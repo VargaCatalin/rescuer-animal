@@ -35,7 +35,7 @@ public class Adopter {
 
     public void doActivity(Animal animal, Activity activity){
 
-        if (animal.getFavouriteActivity().equals(activity.getName())) {
+        if ( animal.getFavouriteActivity() == activity.getName() ) {
 
             animal.setHapinessLevel(animal.getHapinessLevel() + 2);
         } else {
