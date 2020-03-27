@@ -42,15 +42,14 @@ public class App
 
 
         System.out.println("Animal proprietes are:");
-        System.out.println("Name: " + animalDog.name);
-        System.out.println("Age: " + animalDog.age);
-        System.out.println("Weight: " + animalDog.weight);
-        System.out.println("Health: " + animalDog.healthLevel);
-        System.out.println("Hunger level are: " + animalDog.hungerLevel);
-        System.out.println("Hapiness level are: " + animalDog.hapinessLevel);
-        System.out.println("Favourite food are: " + animalDog.favouriteFood);
-        System.out.println("Unfavourable Food are: " + animalDog.unfavorableFood);
-        System.out.println("Favourite activity are: " + animalDog.favouriteActivity);
+        System.out.println("Name: " + animalDog.getName());
+        System.out.println("Age: " + animalDog.getAge());
+        System.out.println("Weight: " + animalDog.getWeight());
+        System.out.println("Health: " + animalDog.getHealthLevel());
+        System.out.println("Hunger level are: " + animalDog.getHungerLevel());
+        System.out.println("Hapiness level are: " + animalDog.getHapinessLevel());
+        System.out.println("Favourite food are: " + animalDog.getFavouriteFood());
+        System.out.println("Favourite activity are: " + animalDog.getFavouriteActivity());
 
         //////////////////////////////////////////////////////////////////////////////
 
@@ -70,14 +69,14 @@ public class App
         //Proprietes of Food
 
        Food food = new Food(5 , "Bones" );
-        food.Weight = 1000;
-        food.price = 50;
-        food.stock = 5;
+        food.setWeight(1000);
+        food.setPrice(50);
+        food.setStock(5);
 
 
-        System.out.println("Food name are: " + food.name);
-        System.out.println("Food weight is: " + food.Weight);
-        System.out.println("Price food is: " + food.price);
+        System.out.println("Food name are: " + food.getName());
+        System.out.println("Food weight is: " + food.getWeight());
+        System.out.println("Price food is: " + food.getPrice());
 
 
 

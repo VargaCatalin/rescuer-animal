@@ -2,7 +2,7 @@ package org.fasttrackit;
 
 public class Bird extends Animal{
 
-    String feathers;
+    private String feathers;
 
     public void showHapiness() {
 
@@ -18,6 +18,11 @@ public class Bird extends Animal{
     }
 
 
+    public String getFeathers() {
+        return feathers;
+    }
 
-
+    public void setFeathers(String feathers) {
+        this.feathers = feathers;
+    }
 }
